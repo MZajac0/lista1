@@ -1,0 +1,32 @@
+﻿<Window x:Class="lista1.zadanie2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lista1"
+        mc:Ignorable="d"
+        Title="zadanie2" Height="300" Width="650">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="0.5*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Column="0" Grid.Row="0" FontSize="25">Imię</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="1" FontSize="25">Nazwisko</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="2" FontSize="25">Data Urodzin</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="3" FontSize="25">Semestr</TextBlock>
+        <TextBox Grid.Row="0" Grid.Column="1" FontSize="25"></TextBox>
+        <TextBox Grid.Row="1" Grid.Column="1" FontSize="25"></TextBox>
+        <TextBox Grid.Row="2" Grid.Column="1" FontSize="25"></TextBox>
+        <TextBox Grid.Row="3" Grid.Column="1" FontSize="25"></TextBox>
+        <Button Grid.Row="3" Grid.Column="3" Content="Zatwierdz wszystko"></Button>
+    </Grid>
+</Window>
