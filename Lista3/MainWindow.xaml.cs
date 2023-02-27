@@ -13,9 +13,9 @@ namespace Lista3
         public MainWindow()
         {
             InitializeComponent();
-            if (File.Exists("C:\\abc.xml"))
+            if (File.Exists("C:\\Nowy folder\\abc.xml"))
             {
-                lista = Serializacja.Deserializacja<List<Osoba>>("C:\\abc.xml");
+                lista = Serializacja.Deserializacja<List<Osoba>>("C:\\Nowy folder\\abc.xml");
             }
             else
             {
@@ -62,7 +62,7 @@ namespace Lista3
 
         private void MainWindow_Closing(object sender, CancelEventArgs e)
         {
-            Serializacja.SerializacjaToXML<List<Osoba>>(lista, "C:\\abc.xml");
+            Serializacja.SerializacjaToXML<List<Osoba>>(lista, "C:\\Nowy folder\\abc.xml");
         }
     }
 }
